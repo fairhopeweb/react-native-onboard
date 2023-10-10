@@ -35,6 +35,7 @@ export const SwiperFlatList = React.forwardRef(
       viewabilityConfig = {},
       disableGesture = false,
       e2eID,
+      overScrollMode,
       ...props
     }: SwiperFlatListProps<T1>,
     ref: React.Ref<SwiperFlatListRefProps>
@@ -224,6 +225,7 @@ export const SwiperFlatList = React.forwardRef(
       showsHorizontalScrollIndicator: false,
       showsVerticalScrollIndicator: false,
       pagingEnabled: true,
+      overScrollMode,
       ...props,
       onMomentumScrollEnd: _onMomentumScrollEnd,
       onScrollToIndexFailed: onScrollToIndexFailed,

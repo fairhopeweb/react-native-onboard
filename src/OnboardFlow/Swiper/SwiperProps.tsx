@@ -120,7 +120,13 @@ export type SwiperFlatListProps<T> = Partial<FlatListProps<T>> & {
   /**
    * See https://github.com/facebook/react-native/blob/master/Libraries/Lists/VirtualizedList.js#L280 for further documentation.
    */
+
+  overScrollMode?: 'always' | 'auto' | 'never'
+  // overScrollMode: ScrollViewProps['overScrollMode'];
+
+
   viewabilityConfig?: ViewabilityConfig
+
 
   //#endregion
 
