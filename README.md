@@ -27,7 +27,6 @@ A library of high-quality components for creating beautiful onboarding and produ
 React Native Onboard helps developers build better onboarding experiences faster so they can focus on what matters most: building great products.
 
 ## Why
-
 Product onboarding is one of the most important experiences in your app. It's usually the first thing your users see, and it's the first impression they have of your product.
 But it's difficult to get right and slow to build. We believe there needs to be a better way to build and iterate on high-quality onboarding experiences.
 
