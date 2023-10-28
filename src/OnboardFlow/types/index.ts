@@ -74,6 +74,8 @@ export interface OnboardFlowProps {
   FooterComponent?: FC<FooterProps>
   PaginationComponent?: FC<PaginationProps>
   PrimaryButtonComponent?: FC<PrimaryButtonProps>
+  primaryButtonStyle?: ViewStyle
+  primaryButtonTextStyle?: StyleProp<TextStyle>
   SecondaryButtonComponent?: FC<SecondaryButtonProps>
   primaryColor?: string
   secondaryColor?: string

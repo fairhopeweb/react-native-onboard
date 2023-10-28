@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { StyleSheet, Text, TouchableOpacity, ViewStyle } from 'react-native'
+import { StyleSheet, Text, TextStyle, TouchableOpacity, ViewStyle, StyleProp } from 'react-native'
 import {
   COLOR_BUTTON_DEFAULT,
   PRIMARY_BUTTON_TEXT_DEFAULT,
@@ -10,9 +10,10 @@ import { TextStyles } from '../../types'
 export interface PrimaryButtonProps {
   currentPage?: number
   goToNextPage: () => void
-  style?: ViewStyle
+  style?: StyleProp<ViewStyle>
   totalPages?: number
   text?: string
+  textStyle: StyleProp<TextStyle>
   disabled?: boolean
 }
 

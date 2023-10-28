@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { KeyboardAvoidingView, StyleProp, StyleSheet, ViewStyle } from 'react-native'
+import { KeyboardAvoidingView, StyleProp, StyleSheet, ViewStyle, TextStyle } from 'react-native'
 import { OnboardComponents } from '../index'
 import { PRIMARY_BUTTON_TEXT_DEFAULT, PRIMARY_BUTTON_TEXT_LAST_PAGE_DEFAULT } from '../constants'
 import { PageData } from '../types'
@@ -17,6 +17,8 @@ export interface FooterProps {
   setCanContinue?: (value: boolean) => void
   showFooter?: boolean
   showHeader?: boolean
+  primaryButtonStyle?: StyleProp<ViewStyle>,
+  primaryButtonTextStyle?: StyleProp<TextStyle>
   props?: any
 }
 
@@ -31,6 +33,8 @@ export const Footer: FC<FooterProps> = ({
   canContinue,
   setCanContinue,
   showFooter = true,
+  primaryButtonStyle,
+  primaryButtonTextStyle,
   ...props
 }) => {
   function getPrimaryButtonTitle() {
@@ -58,6 +62,8 @@ export const Footer: FC<FooterProps> = ({
         totalPages={totalPages}
         goToNextPage={goToNextPage}
         disabled={!canContinue}
+        style={primaryButtonStyle}
+        textStyle={primaryButtonTextStyle}
       />
     </KeyboardAvoidingView>
   )
