@@ -5,7 +5,6 @@ import {
   PRIMARY_BUTTON_TEXT_DEFAULT,
   VERTICAL_PADDING_DEFAULT,
 } from '../../constants'
-import { TextStyles } from '../../types'
 
 export interface PrimaryButtonProps {
   currentPage?: number
@@ -17,15 +16,12 @@ export interface PrimaryButtonProps {
   disabled?: boolean
 }
 
-export const PrimaryButton: FC<PrimaryButtonProps & TextStyles> = ({
-  currentPage,
+export const PrimaryButton: FC<PrimaryButtonProps> = ({
   goToNextPage,
   style,
-  totalPages,
   text = PRIMARY_BUTTON_TEXT_DEFAULT,
   textStyle,
   disabled = false,
-  ...props
 }) => {
   return (
     <TouchableOpacity
