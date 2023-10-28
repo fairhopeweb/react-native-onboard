@@ -87,6 +87,8 @@ export const OnboardFlow: FC<OnboardFlowProps & TextStyles> = ({
   FooterComponent = Footer,
   PaginationComponent = DotPagination,
   PrimaryButtonComponent = PrimaryButton,
+  primaryButtonStyle,
+  primaryButtonTextStyle,
   SecondaryButtonComponent = SecondaryButton,
   primaryColor = COLOR_PRIMARY_DEFAULT,
   secondaryColor = COLOR_SECONDARY_DEFAULT,
@@ -323,6 +325,8 @@ export const OnboardFlow: FC<OnboardFlowProps & TextStyles> = ({
           canContinue={canContinueValue}
           setCanContinue={setCanContinueValue}
           showFooter={showFooter}
+          primaryButtonStyle={primaryButtonStyle}
+          primaryButtonTextStyle={primaryButtonTextStyle}
         />
       </SafeAreaView>
     </ImageBackground>
